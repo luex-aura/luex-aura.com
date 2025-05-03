@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LUEX ChatBot</title>
+  <link rel="stylesheet" href="chatbot.css" />
+</head>
+<body>
+
+  <div class="chatbot-container">
+    <div class="chat-header">🤖 LUEX AURA AI Assistant</div>
+    <div id="chat-box" class="chat-box"></div>
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Ask me anything..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script src="chatbot.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: Arial; padding: 10px; }
+    .chat-window { height: 350px; overflow-y: auto; border: 1px solid #ccc; padding: 10px; }
+    .input-area { margin-top: 10px; display: flex; }
+    .input-area input { flex: 1; padding: 10px; }
+    .input-area button { padding: 10px; }
+    .msg { margin: 5px 0; }
+    .bot { color: blue; }
+    .user { font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <div class="chat-window" id="chatWindow"></div>
+
+  <div class="input-area">
+    <input type="text" id="userInput" placeholder="Ask me anything..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script>
+    async function sendMessage() {
+      const input = document.getElementById("userInput");
+      const msg = input.value.trim();
+      if (!msg) return;
+
+      const chat = document.getElementById("chatWindow");
+      chat.innerHTML += `<div class="msg user">You: ${msg}</div>`;
+      input.value = "";
+
+      const response = await fetch("http://localhost:3000/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: msg })
+      });
+
+      const data = await response.json();
+      chat.innerHTML += `<div class="msg bot">Bot: ${data.reply}</div>`;
+      chat.scrollTop = chat.scrollHeight;
+    }
+  </script>
+</body>
+</html>

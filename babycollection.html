@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luxury Baby Collection | LUEX AURA</title>
+  <link rel="stylesheet" href="baby-style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>LUXURY BABY COLLECTION</h1>
+    <p class="subtitle">Softness, Style & Sophistication for Your Little One</p>
+  </header>
+
+  <div class="collection-container">
+    <!-- Baby Item 1 -->
+    <div class="baby-item">
+      <img src="images/baby1.jpg" alt="Cashmere Baby Blanket" />
+      <h2>Cashmere Blanket</h2>
+      <p>Soft, premium-quality cashmere to keep your baby warm and cozy.</p>
+      <button class="btn-gold">View Details</button>
+    </div>
+
+    <!-- Baby Item 2 -->
+    <div class="baby-item">
+      <img src="images/baby2.jpg" alt="Silk Baby Dress" />
+      <h2>Silk Baby Dress</h2>
+      <p>Elegant silk dress with delicate lace. Perfect for special occasions.</p>
+      <button class="btn-gold">View Details</button>
+    </div>
+
+    <!-- Baby Item 3 -->
+    <div class="baby-item">
+      <img src="images/baby3.jpg" alt="Luxury Baby Booties" />
+      <h2>Luxury Booties</h2>
+      <p>Hand-knitted booties with golden thread accents for extra charm.</p>
+      <button class="btn-gold">View Details</button>
+    </div>
+  </div>
+  <section class="order-form">
+    <h2>Place Your Order - Cash on Delivery</h2>
+    <form action="https://formspree.io/f/mldbekqo" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <textarea name="address" placeholder="Delivery Address" required></textarea>
+      <input type="text" name="product" placeholder="Product Name" required />
+      
+      <label>
+        <input type="checkbox" required />
+        I agree to pay with cash upon delivery.
+      </label>
+      
+      <button type="submit" class="btn-gold">Place Order</button>
+    </form>
+  </section>
+  <section class="order-form">
+    <h2>Order Now — Pay with Cash on Delivery</h2>
+    <form id="orderForm" action="https://formspree.io/f/mldbekqo" method="POST" onsubmit="sendWhatsApp();">
+      <input type="text" name="name" id="name" placeholder="Your Full Name" required />
+      <input type="tel" name="phone" id="phone" placeholder="Phone Number" required />
+      <textarea name="address" id="address" placeholder="Delivery Address" required></textarea>
+      <input type="text" name="product" id="product" placeholder="Product Name" required />
+      
+      <label>
+        <input type="checkbox" required />
+        I agree to pay with cash on delivery.
+      </label>
+  
+      <button type="submit" class="btn-gold">Place Order</button>
+    </form>
+  </section>
+  
+  <script>
+    function sendWhatsApp() {
+      const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
+      const address = document.getElementById("address").value;
+      const product = document.getElementById("product").value;
+  
+      const message = `🍼 *New Baby Order (COD)*\n\n👶 Name: ${name}\n📞 Phone: ${phone}\n🏡 Address: ${address}\n🎁 Product: ${product}\n💰 Payment: Cash on Delivery`;
+  
+      const url = `https://wa.me/+94775211827?text=${encodeURIComponent(message)}`;
+      
+      setTimeout(() => {
+        window.open(url, "_blank");
+      }, 200); // Wait a moment before opening WhatsApp
+    }
+  </script>
+  
+</body>
+</html>

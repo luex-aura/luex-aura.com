@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diamond Glow Facial Kit - Checkout</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="checkout-container">
+    <h1>LUEX Diamond Glow Facial Kit</h1>
+    <p class="tagline">✨ Limited Edition – Only 100 kits left!</p>
+    <form id="checkout-form">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="text" name="address" placeholder="Address" required />
+      <input type="text" name="province" placeholder="Province" required />
+      <input type="text" name="city" placeholder="City" required />
+
+      <div class="color-select">
+        <label>Select Product Color:</label>
+        <div class="color-options">
+          <button type="button" class="color-btn" data-color="White">White</button>
+          <button type="button" class="color-btn" data-color="Gold">Gold</button>
+        </div>
+        <input type="hidden" name="color" id="color" required />
+      </div>
+
+      <button type="button" onclick="notifyWhatsApp()">Order via WhatsApp</button>
+    </form>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

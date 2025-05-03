@@ -1,0 +1,129 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #fefaf5;
+    color: #444;
+  }
+  
+  header {
+    background-color: #fff0e6;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.6rem;
+    color: #b89d69;
+    letter-spacing: 2px;
+  }
+  
+  header .subtitle {
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  .collection-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+  
+  .baby-item {
+    background-color: #fff;
+    border: 1px solid #f2e8d9;
+    border-radius: 12px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .baby-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .baby-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .baby-item h2 {
+    font-size: 1.4rem;
+    margin: 15px 0 10px;
+    color: #b89d69;
+  }
+  
+  .baby-item p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .btn-gold {
+    background-color: gold;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-gold:hover {
+    background-color: #d4af37;
+  }
+  
+  @media (max-width: 768px) {
+    .collection-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .order-form {
+    background-color: #fff7ee;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .order-form h2 {
+    color: #b89d69;
+    margin-bottom: 20px;
+  }
+  
+  .order-form form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .order-form input,
+  .order-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  .order-form button {
+    background-color: gold;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+    

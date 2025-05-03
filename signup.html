@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up | LUEX AURA</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="signup-wrapper">
+    <h2>Create Your Account</h2>
+    <form action="login.php" method="POST">
+
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <input type="Phone number" name="phone Number" placeholder="Number" required />
+      <button type="submit">Sign In</button>
+    </form>
+    <p class="note">By signing up, you agree to our <a href="#">Terms & Privacy</a>.</p>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign in</title>
+  <style>
+    body { background-color: #111; color: white; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; }
+    input, button { margin: 10px; padding: 10px; border: none; border-radius: 5px; }
+    button { background: #444; color: white; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>Sign Un</h2>
+  <form action="signup.php" method="post">
+    <input type="email" name="email" placeholder="Email" required><br>
+    <input type="text" name="username" placeholder="Username" required><br>
+    <input type="password" name="password" placeholder="Password" required><br>
+    <button type="submit">Sign Up</button>
+  </form>
+  <button type="Login">Login </button>
+</body>
+</html>

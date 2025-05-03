@@ -1,0 +1,90 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0b0b0b;
+    color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .collection-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .collection-header h1 {
+    font-size: 2.8rem;
+    color: #d4af37;
+    margin-bottom: 10px;
+  }
+  
+  .collection-header p {
+    font-size: 1.2rem;
+    color: #aaa;
+  }
+  
+  /* Category Grid */
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 10px;
+  }
+  
+  /* Category Card */
+  .category-card {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+  }
+  
+  .category-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .category-card h3 {
+    padding: 15px;
+    font-size: 1.3rem;
+    color: #ffffff;
+    background-color: #121212;
+  }
+  
+  /* Button */
+  .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #d4af37;
+    color: #000;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #b8932d;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .collection-header h1 {
+      font-size: 2rem;
+    }
+  }
+  

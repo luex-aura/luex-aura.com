@@ -1,0 +1,262 @@
+/* Luxury Contact Form */
+.contact-lux {
+  padding: 50px 20px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  background-color: #0d0d0d;
+  border: 1px solid #222;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(255, 153, 0, 0.1);
+  margin-top: 40px;
+}
+
+.contact-lux form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-lux input {
+  padding: 14px;
+  border: 1px solid #333;
+  background-color: #1a1a1a;
+  color: #eee;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-lux input::placeholder {
+  color: #888;
+}
+
+.contact-lux input:focus {
+  border-color: #ff9900;
+  box-shadow: 0 0 10px rgba(255, 153, 0, 0.5);
+  outline: none;
+}
+
+.contact-lux button {
+  background: linear-gradient(90deg, #ff9900, #ffaa33);
+  color: black;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-lux button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px #ff9900;
+}
+
+/* Social Links - Luxury */
+.lux-links {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lux-links a {
+  color: #ff9900;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  transition: text-shadow 0.3s;
+}
+
+.lux-links a:hover {
+  text-shadow: 0 0 8px #ffaa33;
+}
+/* --------------------
+    GLOBAL STYLES
+--------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0b0b0b;
+  color: #fff;
+}
+
+/* Headings and Paragraphs */
+h1, h2, h3, h4 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #bbbbbb;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #ff9900;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffaa33;
+}
+
+/* --------------------
+    HEADER + NAV
+--------------------- */
+header {
+  background-color: #0b0b0b;
+  padding: 15px 0;
+  border-bottom: 1px solid #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-size: 28px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.lux-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.lux-nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lux-nav ul li a {
+  color: #ccc;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.lux-nav ul li a:hover {
+  color: #ff9900;
+}
+
+.icons a {
+  color: #ccc;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.icons a:hover {
+  color: #ff9900;
+}
+
+/* --------------------
+    FORM STYLING
+--------------------- */
+.contact-box {
+  background-color: #111;
+  border-radius: 12px;
+  padding: 30px;
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(255, 153, 0, 0.2);
+  text-align: center;
+}
+
+.contact-box input {
+  width: 45%;
+  padding: 12px;
+  margin: 10px 5px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+.contact-box input:focus {
+  outline: none;
+  border-color: #ff9900;
+}
+
+.contact-box button {
+  padding: 12px 25px;
+  border: none;
+  background-color: #ff9900;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.contact-box button:hover {
+  background-color: #ffaa33;
+}
+
+/* --------------------
+    SOCIAL LINKS
+--------------------- */
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: block;
+  margin: 8px 0;
+  font-weight: bold;
+  color: #ff9900;
+}
+
+.social-links a:hover {
+  color: #ffaa33;
+}
+
+/* --------------------
+    FOOTER
+--------------------- */
+footer {
+  background-color: #0d0d0d;
+  color: #999;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #111;
+  font-size: 14px;
+}
+
+/* --------------------
+    MEDIA QUERIES
+--------------------- */
+@media (max-width: 768px) {
+  .contact-box input {
+    width: 90%;
+  }
+
+  .lux-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* FontAwesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
