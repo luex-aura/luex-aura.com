@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Font Awesome CDN (add this to <head>) -->
+      <!-- HEADER SECTION -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">LUEX AURA</div>
+
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="collection.html">Collections</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.htm">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-icons">
+      <!-- Search Form -->
+      <form action="shop.html" method="GET" class="search-bar">
+        <input type="text" name="search" placeholder="Search..." required>
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+
+      <!-- Cart Icon -->
+      <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+  </div>
+
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <meta charset="UTF-8">
+  <title>LUEX AURA - Luxury Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <!-- Chatbot Toggle Button -->
+<div class="chatbot-toggle" onclick="toggleChatbot()">
+  💬
+</div>
+
+<!-- Chatbot Widget -->
+<div class="chatbot-widget" id="chatbotWidget">
+  <div class="chatbot-header">
+    <span>Chatbot</span>
+    <button onclick="toggleChatbot()">×</button>
+  </div>
+  <iframe src="chatbot.html" frameborder="0"></iframe>
+</div>
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    const widget = document.getElementById('chatbotWidget');
+    const toggleButton = document.querySelector('.chatbot-toggle');
+
+    window.toggleChatbot = function () {
+      widget.style.display = (widget.style.display === 'flex') ? 'none' : 'flex';
+    };
+  });
+</script>
+
+     
+
+  <!-- Slideshow Section -->
+  <div class="slideshow-container">
+
+    <div class="slide fade">
+      <img src="c:\Users\123as\OneDrive\Desktop\business photoes\luexaura.jpg.png" style="width:100%">
+    </div>
+
+    <div class="slide fade">
+      <img src="c:\Users\123as\OneDrive\Desktop\business photoes\MEN’S.png" style="width:100%">
+    </div>
+
+    <div class="slide fade">
+      <img src="c:\Users\123as\OneDrive\Desktop\business photoes\Screenshot 2025-03-20 063125.png" style="width:100%">
+    </div>
+
+  </div>
+
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
+  <!-- Slideshow Script -->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("slide");
+      let dots = document.getElementsByClassName("dot");
+
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }    
+
+      for (i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+      }
+
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].classList.add("active");
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+  </script>
+</body>
+
+</html>
+<section class="hero">
+    <div class="hero-content">
+      <h1>Timeless Luxury, Redefined</h1><section class="hero-section">
+        <!-- Overlay Content -->
+        <div class="hero-content">
+          <h1>Welcome to LUEX AURA</h1>
+          <p>Luxury Shopping Redefined</p>
+          <!-- <a href="shop.html" class="shop-now-btn">Shop Now</a> -->
+        </div>
+      </section>
+      
+      <p>Step into a world of elegance with LUEX AURA’s exclusive fashion and lifestyle collections.</p>
+      <a href="shop.html" class="hero-btn">Shop Now</a>
+    </div>
+  </section>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUEX AURA - Luxury Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+</body>
+</html>
+<section class="bestsellers">
+    <div class="section-title">Bestselling Products</div>
+    <div class="products-grid">
+      <!-- Product Card 1 -->
+      <div class="product-card">
+        <img src="c:\Users\123as\OneDrive\Desktop\Website\images\Screenshot 2025-04-13 222725.png" alt="Product 1">
+        <h3>Luxury Bag</h3>
+        <p>Rs2999.00</p>
+        <a href="luxurybags.html" class="btn">Shop Now</a>
+      </div>
+      <!-- Product Card 2 -->
+      <div class="product-card">
+        <img src="c:\Users\123as\OneDrive\Desktop\Website\images\Screenshots\Screenshot 2025-04-13 210907.png" alt="Product 2">
+        <h3>Men's dress set</h3>
+        <p>Rs2559.00</p>
+        <a href="" class="btn">Shop Now</a>
+      </div>
+      <!-- Product Card 3 -->
+      <div class="product-card">
+        <img src="c:\Users\123as\OneDrive\Desktop\Website\images\Screenshot 2025-04-14 084452.png" alt="Product 3">
+        <h3>Leather Bag</h3>
+        <p>Rs3999.00</p>
+        <a href="" class="btn">Shop Now</a>
+      </div>
+      <!-- Product Card 4 -->
+      <div class="product-card">
+        <img src="c:\Users\123as\OneDrive\Desktop\Website\images\Screenshots\20250417_164649.jpg" alt="Product 4">
+        <h3>Designer Shoes</h3>
+        <p>Rs3499.00</p>
+        <a href="" class="btn">Shop Now</a>
+      </div>
+    </div>
+  </section>
+  <section class="lifestyle-banner">
+    <div class="lifestyle-content">
+      <h2>Elevate Your Lifestyle</h2>
+      <p>Discover exclusive fashion, timeless accessories, and curated elegance — only at LUEX AURA.</p>
+      <a href="collection.html" class="lifestyle-btn">Explore Collection</a>
+    </div>
+  </section>
+  <section class="testimonials">
+    <div class="section-title">What Our Customers Say</div>
+    <div class="testimonials-grid">
+  
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card">
+        <p>"Absolutely love the quality and style. LUEX AURA is now my go-to for luxury fashion!"</p>
+        <h4>— Ayesha R.</h4>
+        <div class="stars">★★★★★</div>
+      </div>
+  
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card">
+        <p>"Elegant, fast delivery, and perfect packaging. Couldn’t ask for more!"</p>
+        <h4>— Daniel K.</h4>
+        <div class="stars">★★★★★</div>
+      </div>
+  
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card">
+        <p>"The leather bag I bought feels like true luxury. Worth every rupee!"</p>
+        <h4>— Niroshan P.</h4>
+        <div class="stars">★★★★★</div>
+      </div>
+  
+    </div>
+  </section>
+  <section class="newsletter">
+    <div class="newsletter-content">
+      <h2>Join the LUXE Club</h2>
+      <p>Get exclusive updates, luxury drops, and special offers right to your inbox.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+<!-- Why Choose Us / Brand Pillars Section -->
+<section class="brand-pillars">
+    <div class="container">
+      <h2 class="section-title">Why Choose Us</h2>
+      <div class="pillars">
+        <div class="pillar">
+          <div class="icon">
+            <i class="fas fa-gem"></i>
+          </div>
+          <h3 class="pillar-title">Premium Quality</h3>
+          <p class="pillar-description">Our products are crafted with the finest materials to provide a luxurious experience.</p>
+        </div>
+        <div class="pillar">
+          <div class="icon">
+            <i class="fas fa-shipping-fast"></i>
+          </div>
+          <h3 class="pillar-title">Worldwide Shipping</h3>
+          <p class="pillar-description">We deliver our luxury items to every corner of the globe with fast and reliable shipping.</p>
+        </div>
+        <div class="pillar">
+          <div class="icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 class="pillar-title">Secure Payments</h3>
+          <p class="pillar-description">Enjoy safe, secure transactions with the latest encryption technology.</p>
+        </div>
+        <div class="pillar">
+          <div class="icon">
+            <i class="fas fa-hand-sparkles"></i>
+          </div>
+          <h3 class="pillar-title">Handpicked Designs</h3>
+          <p class="pillar-description">Every item is carefully selected to reflect our commitment to luxury and elegance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Newsletter / VIP Club Signup Section -->
+<section class="newsletter">
+    <div class="container">
+      <h2 class="newsletter-title">Join the Elite Circle</h2>
+      <p class="newsletter-subtitle">
+        Get exclusive offers, early access to new collections & VIP-only surprises.
+      </p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe Now</button>
+      </form>
+    </div>
+  </section>
+<!-- Instagram / Social Media Gallery Section -->
+<section class="instagram-gallery">
+    <div class="container">
+      <h2 class="gallery-title">Follow Our Journey</h2>
+      <p class="gallery-subtitle">@luex_aura</p>
+  
+     
+  </section>
+<!-- Footer Social Media Icons -->
+<div class="footer-social-icons">
+    <h4>Connect With Us</h4>
+    <a href="https://wa.me/94775211827" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com/online_shopperss_lk?igsh=eXE1aGs0cG9pYzNz" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@online_shopperss_?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https://chat.whatsapp.com/KeIc9DdE7R8DZeLGik9iD7" target="_blank"><i class="fas fa-bullhorn"></i></a>
+  </div>
+</footer>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Non-Scrolling Footer Bar</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Your content -->
+  <div class="content">
+    <h1>Website Content</h1>
+    <p>Scroll down to test the footer behavior.</p>
+    <p style="height: 1200px;"></p>
+  </div>
+
+  <!-- Fixed Footer -->
+  <footer class="footer">
+    <div class="footer-group">
+      <h5>Security certification</h5>
+      <div class="footer-logos">
+     <img src="c:\Users\123as\OneDrive\Desktop\Website\images\img.logo.png.png" alt="PCI DSS">
+      <img src="c:\Users\123as\OneDrive\Desktop\Website\images\visa-secure-logo-800x450.webp" alt="Visa Secure">
+      <img src="c:\Users\123as\OneDrive\Desktop\Website\images\mastercard-id-check-svgrepo-com.svg" alt="ID Check">
+      <img src="c:\Users\123as\OneDrive\Desktop\Website\images\americanexpress.logo.png.png" alt="SafeKey">
+        <!-- more icons -->
+      </div>   
+    <div class="footer-group">
+      <h4>We accept</h4>
+      <div class="footer-logos">
+        <img src="c:\Users\123as\OneDrive\Desktop\Website\images\visa.logo.png.png" alt="Visa">
+        <img src="c:\Users\123as\OneDrive\Desktop\Website\images\amex-svgrepo-com.svg" alt="American Express">
+        <img src="c:\Users\123as\OneDrive\Desktop\Website\images\discover.logo.png.svg" alt="Discover">
+        <img src="c:\Users\123as\OneDrive\Desktop\Website\images\mastro.logo.png.png" alt="Maestro">
+        <img src="c:\Users\123as\OneDrive\Desktop\Website\images\dinerclub.logo.png.png" alt="Diners Club">
+        <img src="c:\Users\123as\OneDrive\Desktop\Website\images\jcb.logo.png.jpeg" alt="JCB">
+        <img src="c:\Users\123as\OneDrive\Desktop\Website\images\applepay.logo.png.svg" alt="Apple Pay">
+        <img src="c:\Users\123as\OneDrive\Desktop\Website\images\gpay.logo.ong.png" alt="Google Pay">
+        <!-- more icons -->
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
